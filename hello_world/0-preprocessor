@@ -1,2 +1,2 @@
 #!/bin/bash
-cpp "$c_file" > "$preprocessed_file"
+export CFILE=0-main.c
