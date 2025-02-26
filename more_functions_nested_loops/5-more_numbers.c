@@ -8,14 +8,14 @@
 void more_numbers(void)
 {
 
-  int i, more_numbers;
+  int i, m;
   for (i = 1; i <= 10; i++)
     {
-      for (more_numbers = 0; more_numbers <= 14; more_numbers++)
+      for (m = 0; m <= 14; m++)
         {
-          if (more_numbers >= 10)
+          if (m >= 10)
           _putchar('1');
-          _putchar(more numbers % 10 + '0');
+          _putchar(m % 10 + '0');
           }
           _putchar('\n');
         }
