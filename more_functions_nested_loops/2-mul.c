@@ -1,10 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 
 /** 
  * mul - multiplies integers.
- * @i: integer to check
- *
- * Return: Always 0.
+ * @a: integer 1.
+ * @b: integer 2.
+ * Return: addition of a and b.
  */
 int mul(int a, int b)
 {
