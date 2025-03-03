@@ -11,28 +11,22 @@
  */
 void print_diagonal(int n)
 {
-  int vert = 0;
-  int horz = 0;
-  
-  if (n > 0)
-  {
-    while (horz < vert)
-      {
-        _putchar(' ');
+	int len, space;
 
-        horz = horz + 1;
-      }
-    _putchar('\\');
+	if (n > 0)
+	{
+		for (len = 0; len < n; len++)
+		{
+			for (space = 0; space < len; space++)
+				_putchar(' ');
+			_putchar('\\');
 
-    vert = vert + 1;
-    horz = 0;
+			if (len == n - 1)
+				continue;
 
-    if (vert != n)
-    {
-      _putchar('\n');
-    }
-  }
+			_putchar('\n');
+		}
+	}
+
+	_putchar('\n');
 }
-_putchar('\n');
-}
-  }
