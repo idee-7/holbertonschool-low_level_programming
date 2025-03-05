@@ -1,23 +1,25 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <stdio.h>
 
 /**
-* void prototypes()
-*char prototypes()
-* int prototypes()
-*/
-void reset_to_98(int *n);
-void _puts(char *str);
-void print_rev(char *s);
-void rev_string(char *s);
-void swap_int(int *a, int *b);
-void swap_char(char *a, char *b);
-void puts2(char *str);
-void puts_half(char *str);
-void print_array(int *a, int n);
-char *_strcpy(char *dest, char *src);
+ * File: main.h
+ * Auth: Dev Nderitu
+ *description: Header file containing prototypes for all functions
+ * used in the0x07-pointers_arrays_strings directory
+ */
+
+
+#include <stdio.h>
+#include <stddef.h>
+
+void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
+void set_string(char **s, char *to);
+unsigned int _strspn(char *s, char *accept);
 int _putchar(char c);
-int _strlen(char *s);
-int _atoi(char *s);
-#endif /*MAIN_H*/
+char *_memset(char *s, char b, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n);
+char *_strchr(char *s, char c);
+char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
+#endif /* MAIN_H */
