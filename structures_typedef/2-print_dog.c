@@ -1,15 +1,12 @@
 #include <stdio.h>
 #include "dog.h"
-
 /**
- * print_dog - prints a struct dog
- * @d: pointer to dog struct
- * Return: pointer to struct
+ * print_dog - print struct dog
+ * @d: pointer to struct dog
+ * Return: return pointer to struct
  */
 
 void print_dog(struct dog *d)
-{
-	void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
@@ -22,5 +19,4 @@ void print_dog(struct dog *d)
 		printf("Owner: (nil)\n");
 	else
 		printf("Owner: %s\n", d->owner);
-}
 }
